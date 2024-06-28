@@ -1,0 +1,103 @@
+.marginBottom8 {
+  margin-bottom: 8px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-image: linear-gradient(to left bottom, #fd42d3, #fd6ddf, #fd8ee8, #fdabf1, #fdc6f7);
+  color: #ffffff;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+header {
+  padding-bottom: 10px;
+}
+header .profile-avatar {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.profile-bio {
+  text-align: center;
+}
+.profile-bio-name {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.profile-bio-subtitle {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+.profile-bio-description {
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.social-links {
+  max-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.social-links li img {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.social-links li img:hover {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.projects-list {
+  margin-top: 20px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #ff32f5;
+  display: flex;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #ff32f5;
+  transition: all ease 0.5s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.projects-list-item a:hover {
+  background-color: transparent;
+}
